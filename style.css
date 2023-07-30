@@ -54,9 +54,10 @@ padding: 3px 0 0  20px;
 }
 
 .fact-click{
+    width: 450px;
     display: none;
-    justify-content: center;
     padding: 20px 0;
+    margin: 0 auto;
 }
 .fact-card{
     max-width: 450px;
@@ -66,7 +67,7 @@ padding: 3px 0 0  20px;
     border-radius: 15px;
     flex-direction: column;
     background-color: #ddd;
-    box-shadow: 0 6px 8px rgba(0, 0, 0,0.3);
+    box-shadow: 0 6px 10px rgba(0, 0, 0,0.3);
     transition: all 0.3s ease;
 }
 .fact-card img{

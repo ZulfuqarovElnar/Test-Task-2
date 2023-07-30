@@ -35,14 +35,17 @@ document.addEventListener("DOMContentLoaded", function () {
     setHoverEvents("factImg", ["line3", "line4"]);
 });
 
+// * FactDesription clicked
 const factDescriptions = document.querySelectorAll(".factDesription");
 
-factDescriptions.forEach((fact) => {
-    const factPlusIcon = fact.querySelector(".fact-plus i");
+    factDescriptions.forEach((fact) => {
+        const factPlusIcon = fact.querySelector(".fact-plus i");
+        const factClickElement = fact.nextElementSibling; 
 
-    fact.addEventListener("click", () => {
-        const isOpen = factPlusIcon.classList.contains("fa-minus");
-        factPlusIcon.classList.toggle("fa-plus", isOpen);
-        factPlusIcon.classList.toggle("fa-minus", !isOpen);
+        fact.addEventListener("click", () => {
+            const isOpen = factPlusIcon.classList.contains("fa-minus");
+            factPlusIcon.classList.toggle("fa-plus", isOpen);
+            factPlusIcon.classList.toggle("fa-minus", !isOpen);
+            factClickElement.style.display = isOpen ? "none" : "block";
+        });
     });
-});
