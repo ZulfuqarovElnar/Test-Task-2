@@ -35,3 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
     setHoverEvents("factImg", ["line3", "line4"]);
 });
 
+const factDescriptions = document.querySelectorAll(".factDesription");
+
+factDescriptions.forEach((fact) => {
+    const factPlusIcon = fact.querySelector(".fact-plus i");
+
+    fact.addEventListener("click", () => {
+        const isOpen = factPlusIcon.classList.contains("fa-minus");
+        factPlusIcon.classList.toggle("fa-plus", isOpen);
+        factPlusIcon.classList.toggle("fa-minus", !isOpen);
+    });
+});
