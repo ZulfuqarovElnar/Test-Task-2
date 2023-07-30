@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f5f5f5;
+}
+
+.factsMain {
+    max-width: 1640px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.factsMainHeading{
+    text-align: center;
+    padding: 100px 0;
+    font-size: 45px;
+    color: #333;
+}
+.factDesription{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.factDesription:hover,
+.factDesriptionImg:hover{
+    background-color: #000;
+    color: #fff;
+} 
+.factDesription p{
+padding: 3px 0 0  20px;
+}
+.fact-plus{
+    padding: 4px 20px 0 0 ;
+}
+.factDesriptionImg{
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+}
+.factDesriptionImg img{
+    width: 54.63px;
+    padding: 12px 0;
+}
+
+.fact-click{
+    display: none;
+    justify-content: center;
+    padding: 20px 0;
+}
+.fact-card{
+    max-width: 450px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    background-color: #ddd;
+    box-shadow: 0 6px 8px rgba(0, 0, 0,0.3);
+    transition: all 0.3s ease;
+}
+.fact-card img{
+    border-radius: 15px 15px 0 0;
+    max-width: 450px;
+    height: 300px;
+}
+.fact-card:hover{
+    transform: scale(1.1);
+    background-color: #000;
+}
+.fact-card a{
+    text-align: center;
+    padding: 40px 0;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.fact-card:hover a{
+    color: #fff;
+}
+hr{
+    border: 1px solid rgba(0, 225, 255, 0.671);
+}
