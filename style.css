@@ -30,6 +30,7 @@ body {
     padding: 30px 0;
     border-radius: 15px;
     transition: all 0.3s ease;
+    cursor: pointer
 }
 .factDesription:hover,
 .factDesriptionImg:hover{
@@ -49,7 +50,7 @@ padding: 3px 0 0  20px;
 }
 .factDesriptionImg img{
     width: 54.63px;
-    padding: 12px 0;
+    padding: 13px 0;
 }
 
 .fact-click{
