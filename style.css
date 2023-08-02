@@ -110,12 +110,26 @@ hr{
 }
 
 @media screen  and (max-width: 500px) {
+    .factsMainHeading{
+        padding: 50px 0;
+        font-size: 36px
+    }
     .fact-click{
         width: 350px;
+    }
+    .fact-card{
+        height: 300px;
+    }
+    .fact-card a{
+        padding: 10px 3px;
+    }
+    .fact-card img{
+        height: 200px;
     }
     .factDesription h3{
         padding: 3px 5px;
         font-size: 16px;
+        text-align: center;
     }
 }
 @media screen  and (max-width: 400px){
@@ -127,5 +141,13 @@ hr{
     .fact-click{
         width: 180px;
         padding: 20px 10px 20px 5px;
+    }
+    .factDesription h3{
+        padding: 0 5px;
+    }
+}
+@media screen  and (max-width: 250px){
+    .fact-click{
+        width: 140px;
     }
 }
