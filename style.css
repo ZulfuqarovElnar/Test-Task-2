@@ -56,7 +56,7 @@ padding: 3px 0 0  20px;
 .fact-click{
     width: 450px;
     display: none;
-    padding: 20px 0;
+    padding: 20px 15px;
     margin: 0 auto;
 }
 .fact-card{
@@ -107,4 +107,25 @@ hr{
 
     font-size: 20px;
     color: #FF0000; 
+}
+
+@media screen  and (max-width: 500px) {
+    .fact-click{
+        width: 350px;
+    }
+    .factDesription h3{
+        padding: 3px 5px;
+        font-size: 16px;
+    }
+}
+@media screen  and (max-width: 400px){
+    .fact-click{
+        width: 250px;
+    }
+}
+@media screen  and (max-width: 300px){
+    .fact-click{
+        width: 180px;
+        padding: 20px 10px 20px 5px;
+    }
 }
