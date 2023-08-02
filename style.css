@@ -81,14 +81,30 @@ padding: 3px 0 0  20px;
 }
 .fact-card a{
     text-align: center;
-    padding: 40px 0;
+    padding: 40px 10px;
     text-decoration: none;
     color: #000;
-    font-size: 18px;
+    font-size: 20px;
 }
 .fact-card:hover a{
     color: #fff;
 }
 hr{
     border: 1px solid rgba(0, 225, 255, 0.671);
+}
+
+.fact-click.loading {
+    display: flex;
+    text-align: center;
+    height: 40px;
+    font-size: 20px;
+    color: #999;
+}
+
+.fact-click.error {
+    display: flex;
+    text-align: center;
+
+    font-size: 20px;
+    color: #FF0000; 
 }
